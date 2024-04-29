@@ -1,0 +1,7 @@
+step 1- install docker 
+step 2 - docker run -d -p 5000:5000 --name registry registry:2
+step 3 - docker pull centos 
+step 4 - docker tag centos localhost:5000/centos
+step 5 - docker push localhost:5000/centos
+step 6 - docker rmi -f 5d0da3dc9764
+step 7 - docker pull localhost:5000/centos
