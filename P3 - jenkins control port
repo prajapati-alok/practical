@@ -1,0 +1,5 @@
+step 1 - create instance and install docker 
+step 2 - docker pull jenkins/Jenkins
+step 3- docker inspect db75aa81ca2b
+step 4- docker run –p 8080:8080 –p 50000:50000 jenkins/jenkins
+step 5 - paste the publicip:8080 and publicip:50000
