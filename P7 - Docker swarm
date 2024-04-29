@@ -1,0 +1,13 @@
+step 1 - create 3 instance and intstall docker on each 
+step 2 - docker swarm init 
+step 3 - docker swarm join-token worker 
+step 4 - docker node ls
+step 5 - docker service create --replicas 5 alpine ping www.google.com
+step 6 - docker service ls
+step 7 - docker service ps  service_id
+step 8 - docker node promote node_id
+step 9 - docker swarm leave
+10 - docker node rm node_id
+11 - docker container ls
+12 - docker node demote node_id
+13 - docker node remove node_id
