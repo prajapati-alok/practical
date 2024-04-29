@@ -1,0 +1,12 @@
+step 1 - run instance and install docker 
+Step 2 -  run three images a - docker run -d -p 80:80 --name mynginx nginx 
+                           b - docker run hello-world
+                           c - docker run centos 
+step 3 - lifecycle 
+a - docker top (conatiner id)
+b - docker stats (container id )
+c - docker pause (container id)
+d - docker unpause 
+i - docker start 
+e - docker rm -f 
+f - docker kill (conatiner id )
