@@ -1,0 +1,17 @@
+step 1 - create instance and install docker 
+step 2 - create mkdir and create Dockerfile init and paste 
+
+FROM ubuntu
+MAINTAINER omyapatil147@gmail.com
+RUN apt update -y && \
+    apt install nginx -y
+CMD ["echo", "This image is created by omkar"]
+
+step 3 - docker build -t dirname:latest . in the same dir 
+step 4 - sudo docker tag dirname:latest alok127/lab:001
+Step 5 - login docker hub in your linux  terminal with your credentials 
+Command : docker push image_name_with_dockerhub_repository:tag
+$docker push alok127/lab:001
+
+step6 - docker rmi -f (image id)
+step7 - docker run alok127/lab:001
