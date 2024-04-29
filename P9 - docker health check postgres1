@@ -1,0 +1,9 @@
+step 1  - create and install docker 
+step 2 - docker container run --name pg -e POSTGRES_PASSWORD=Password -d postgres
+step 3 - sudo docker container exec -it pg bash
+step 4 - pg_isready –U postgres
+step 5 - exit
+step 5 - sudo docker container run --name pg2 -e POSTGRES_PASSWORD=Password --health-cmd="pg_isready -U postgres || exit 1" -d postgres
+docker ps
+step 6 - sudo docker container run --name pg3 -e POSTGRES_PASSWORD=Password --health-cmd="pg_isready -U root || exit 1" -d postgres
+docker ps 
